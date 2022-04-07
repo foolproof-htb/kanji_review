@@ -5,7 +5,7 @@
       fixed
       app
     >
-      <v-toolbar-title v-text="title" />
+      <nuxt-link to="/"><v-toolbar-title v-text="title" /></nuxt-link>
     </v-app-bar>
     <v-main>
       <v-container>
@@ -66,3 +66,12 @@ export default {
   },
 }
 </script>
+
+<style>
+  a {
+    text-decoration: none;
+  }
+  .v-toolbar__title {
+    color: #dedede;
+  }
+</style>
